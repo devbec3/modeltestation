@@ -10,7 +10,7 @@ from django import forms
 
 from modeltranslation.models import FieldTranslation
 
-from tinymce.widgets import TinyMCE
+from ckeditor.widgets import CKEditorWidget
 
 import re
 
@@ -49,7 +49,7 @@ class FieldTranslationForm(ModelFormTrimForm):
 	def __init__(self, *args, **kwargs):
 		super(FieldTranslationForm, self).__init__(*args, **kwargs)
 		if self.instance and has_html_tag(self.instance.source_text):
-			self.fields["translation"].widget = TinyMCE()
+			self.fields["translation"].widget = CKEditorWidget()
 
 	def clean(self):
 		cleaned_data = super(FieldTranslationForm, self).clean()
