@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('context', models.TextField(default=None, help_text='Contexto que ayudar\xe1 a los traductores a traducir este texto.', null=True, verbose_name='Contexto')),
                 ('creation_datetime', models.DateTimeField(verbose_name='Fecha de creaci\xf3n del objeto')),
                 ('last_update_datetime', models.DateTimeField(verbose_name='Fecha de \xfaltima actualizaci\xf3n del objeto')),
-                ('creator_user', models.ForeignKey(related_name='model_translation', default=None, to=settings.AUTH_USER_MODEL, help_text='Usuario que ha realizado la \xfaltima traducci\xf3n', null=True, verbose_name='Usuario que ha realizado la traducci\xf3n')),
+                ('creator_user', models.ForeignKey(on_delete=models.deletion.CASCADE, related_name='model_translation', default=None, to=settings.AUTH_USER_MODEL, help_text='Usuario que ha realizado la \xfaltima traducci\xf3n', null=True, verbose_name='Usuario que ha realizado la traducci\xf3n')),
             ],
         ),
     ]
