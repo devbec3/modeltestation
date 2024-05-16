@@ -167,15 +167,15 @@ def _set_dict_translations(instance, dict_translations):
 				# Translated field name
 				trans_field = trans_attr(field,lang)
 				# If translated field name is in the dict, we assign it to the object
-				if dict_translations.has_key(trans_field):
-					setattr(instance,trans_field,dict_translations[trans_field])
-					
+				if trans_field in dict_translations:
+					setattr(instance, trans_field, dict_translations[trans_field])
+
 				# Is fuzzy attribute
-				trans_isfuzzy = trans_is_fuzzy_attr(field,lang)
+				trans_isfuzzy = trans_is_fuzzy_attr(field, lang)
 				# If "is fuzzy" name is in the dict, we assign it to the object
-				if dict_translations.has_key(trans_isfuzzy):
-					is_fuzzy_value = (dict_translations[trans_isfuzzy]=="1") or (dict_translations[trans_isfuzzy]==1)
-					setattr(instance,trans_isfuzzy, is_fuzzy_value)
+				if trans_isfuzzy in dict_translations:
+					is_fuzzy_value = (dict_translations[trans_isfuzzy] == "1") or (dict_translations[trans_isfuzzy] == 1)
+					setattr(instance, trans_isfuzzy, is_fuzzy_value)
 
 
 ########################################################################
