@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from modeltranslation.models import checksum, FieldTranslation, trans_attr, trans_is_fuzzy_attr
+from modeltranslation1.models import checksum, FieldTranslation, trans_attr, trans_is_fuzzy_attr
 from django.db import models
 from django.db.models import signals
 from django.conf import settings

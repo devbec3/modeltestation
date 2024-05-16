@@ -6,9 +6,9 @@ from django.http import HttpResponseRedirect, Http404
 
 from django.core.urlresolvers import reverse
 from django.db import transaction
-from modeltranslation.forms import FieldTranslationForm, ImportTranslationsForm
+from modeltranslation1.forms import FieldTranslationForm, ImportTranslationsForm
 
-from modeltranslation.models import checksum, FieldTranslation, trans_attr, trans_is_fuzzy_attr
+from modeltranslation1.models import checksum, FieldTranslation, trans_attr, trans_is_fuzzy_attr
 
 from django.conf import settings
 

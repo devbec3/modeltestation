@@ -34,7 +34,7 @@ except(IOError, ImportError):
     long_description = open('README.md').read()
 
 data_files = []
-for dirpath, dirnames, filenames in os.walk('.'):
+for dirpath, dirnames, filenames in os.walk('modeltranslation1'):
     for i, dirname in enumerate(dirnames):
         if dirname.startswith('.'):
             del dirnames[i]

@@ -10,8 +10,8 @@ from django.db import transaction
 from django.conf import settings
 import re
 
-from modeltranslation.admin.forms import FieldTranslationForm, ImportTranslationsForm
-from modeltranslation.models import FieldTranslation
+from modeltranslation1.admin.forms import FieldTranslationForm, ImportTranslationsForm
+from modeltranslation1.models import FieldTranslation
 
 
 ########################################################################

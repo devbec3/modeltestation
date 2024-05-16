@@ -3,7 +3,7 @@
 from django.conf.urls import url
 
 # ModelTranslationURLs
-from modeltranslation.admin import views
+from modeltranslation1.admin import views
 
 
 class ModelTranslationUrls(object):
