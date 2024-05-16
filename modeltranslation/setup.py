@@ -46,8 +46,8 @@ for dirpath, dirnames, filenames in os.walk('.'):
 setup(
     name="modeltranslation",
     version="0.25",
-    author="intelligenia S.L.",
-    author_email="diego@intelligenia.es",
+    author="Dencanto Community",
+    author_email="desarrollo@dencantocommunity.com",
     description="Modeltranslation is an utility to translate Django model fields.",
     long_description=long_description,
     classifiers=[
@@ -60,7 +60,7 @@ setup(
       ],
     license="MIT",
     keywords="modeltranslation translations",
-    url='https://github.com/intelligenia/modeltranslation',
+    url='https://github.com/devbec3/modeltestation',
     packages=find_packages('.'),
     data_files=data_files,
     include_package_data=True,
