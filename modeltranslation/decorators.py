@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from modeltranslation1.models import FieldTranslation
+from modeltranslation.models import FieldTranslation
 import hashlib
 
 ###########################################

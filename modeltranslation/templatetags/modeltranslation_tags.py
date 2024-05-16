@@ -4,7 +4,7 @@ from django import template
 from django.conf import settings
 from django.utils.translation import get_language
 
-from modeltranslation1.translation import _get_fieldtranslations
+from modeltranslation.translation import _get_fieldtranslations
 
 register = template.Library()
 

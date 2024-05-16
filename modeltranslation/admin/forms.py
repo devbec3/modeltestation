@@ -8,7 +8,7 @@
 
 from django import forms
 
-from modeltranslation1.models import FieldTranslation
+from modeltranslation.models import FieldTranslation
 
 from tinymce.widgets import TinyMCE
 

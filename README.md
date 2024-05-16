@@ -58,7 +58,7 @@ TRANSLATABLE_MODEL_MODULES = ["app1.models", "app2.models", "fees.models", "menu
 Import **addtranslations** if each of your models.py files:
 
 ```python
-from modeltranslation1.translation import addtranslations
+from modeltranslation.translation import addtranslations
 ```
 
 After that, you'll have to call **addtranslations** at the end of this file:
@@ -106,7 +106,7 @@ include automatically the extra fields for each language you have in
 your website.
 
 ```python
-from modeltranslation1.forms import TranslatableModelForm
+from modeltranslation.forms import TranslatableModelForm
 
 
 class EventForm(TranslatableModelForm):

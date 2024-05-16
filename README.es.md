@@ -52,7 +52,7 @@ TRANSLATABLE_MODEL_MODULES = ["app1.models", "app2.models", "fees.models", "menu
 Importar addtranslations en el fichero de modelos de tu aplicación:
 
 ```python
-from modeltranslation1.translation import addtranslations
+from modeltranslation.translation import addtranslations
 ```
 
 Luego, tendrás que realiza esta llamada al FINAL de ese mismo fichero de modelos:
@@ -100,7 +100,7 @@ un campo extra por cada campo e idioma y será el encargado de guardar los
 datos una vez que se guarde el objeto.
 
 ```python
-from modeltranslation1.forms import TranslatableModelForm
+from modeltranslation.forms import TranslatableModelForm
 
 
 class EventForm(TranslatableModelForm):

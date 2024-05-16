@@ -6,7 +6,7 @@ from django import forms
 from django.conf import settings
 #from django.utils.translation import ugettext as _
 
-from modeltranslation1.models import trans_attr, trans_is_fuzzy_attr
+from modeltranslation.models import trans_attr, trans_is_fuzzy_attr
 
 
 ########################################################################
