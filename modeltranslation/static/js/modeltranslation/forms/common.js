@@ -9,7 +9,9 @@ $(document).ready(function(){
 				$("#id_translation").html(source_text);
 			}
 			// If there is a TinyMCE editor, use its API
-
+			else{
+				tinymce.activeEditor.setContent(source_text, {format: 'raw'});
+			}
 			return false;
 		});
 	
