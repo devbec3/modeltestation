@@ -424,7 +424,6 @@ class FieldTranslation(models.Model):
         self.last_update_datetime = now_datetime
 
         # Current user is creator
-        # (get current user with django-cuser middleware)
         if hasattr(self, 'request') and hasattr(self.request, 'user'):
             self.creator_user = self.request.user
 
