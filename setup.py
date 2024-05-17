@@ -56,7 +56,8 @@ setup(
         'License :: OSI Approved :: MIT License',
     ],
     install_requires=[
-      ],
+        'django-tinymce',
+    ],
     license="MIT",
     keywords="modeltranslation translations",
     url='https://github.com/devbec3/modeltestation',
