@@ -10,8 +10,6 @@ from django import forms
 
 from modeltranslation.models import FieldTranslation
 
-from ckeditor.widgets import CKEditorWidget
-
 import re
 
 def has_html_tag(text):
@@ -49,7 +47,9 @@ class FieldTranslationForm(ModelFormTrimForm):
 	def __init__(self, *args, **kwargs):
 		super(FieldTranslationForm, self).__init__(*args, **kwargs)
 		if self.instance and has_html_tag(self.instance.source_text):
-			self.fields["translation"].widget = CKEditorWidget()
+			self.fields["translation"].widget.attrs = {
+				'id': "editor",
+			}
 
 	def clean(self):
 		cleaned_data = super(FieldTranslationForm, self).clean()

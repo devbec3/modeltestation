@@ -56,7 +56,7 @@ setup(
         'License :: OSI Approved :: MIT License',
     ],
     install_requires=[
-          'django-cuser', 'django-tinymce' 
+          'django-cuser',
       ],
     license="MIT",
     keywords="modeltranslation translations",

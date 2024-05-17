@@ -26,7 +26,6 @@ Ahora sí, para instalar la aplicación modeltranslation en settings.py debes
 incluirla en el listado de aplicaciones instaladas.
 
 INSTALLED_APPS = (
-  "tinymce",
   "cuser",
   "modeltranslation"
 )
