@@ -37,15 +37,6 @@ class FieldTranslationForm(ModelFormTrimForm):
 		model = FieldTranslation
 		exclude = ("module", "model", "object_id", "field", "lang", "source_text", "source_md5", "context", "creation_datetime", "last_update_datetime", "creator_user")
 
-	class Media:
-		css = {
-			"all": ("css/modeltranslation/forms/common.css",)
-		}
-
-		js = (
-			"js/modeltranslation/forms/common.js",
-		)
-
 	def __init__(self, *args, **kwargs):
 		super(FieldTranslationForm, self).__init__(*args, **kwargs)
 		if self.instance and has_html_tag(self.instance.source_text):

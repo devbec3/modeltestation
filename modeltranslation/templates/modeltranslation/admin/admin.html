@@ -8,12 +8,10 @@
 {% block js %}
 	{{ block.super }}
 	<script type="text/javascript" src="{% static 'js/lib/sugar-1.3.9-full.development.js' %}"></script>
-	<script type="text/javascript" src="{% static 'js/modeltranslation/import.js' %}"></script>
 {% endblock js %}
 
 {% block custom-css %}
 	{{ block.super }}
-	<link rel="stylesheet" href="{% static 'css/modeltranslation/import.css' %}" />
 {% endblock %}
 
 {% block head_title %}
