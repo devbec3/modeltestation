@@ -11,14 +11,21 @@ $(document).ready(function(){
 			// If there is a TinyMCE editor, use its API
 			else{
 //				tinymce.activeEditor.setContent(source_text, {format: 'raw'});
-				tinymce.init({
-                    selector: 'textarea',
-                    setup: function (editor) {
-                        editor.on('init', function (e) {
-                        editor.setContent(source_text, {format: 'raw'});
-                        });
+				try{
+                    textareas = $('textarea');
+                    for (let i=0; i<textareas.length; i++){
+                        var id = '#'+textareas[i].id;
+                        var source_text = textareas[i].innerText;
+                        tinymce.init({
+                            selector: id,
+                            setup: function (editor) {
+                                editor.on('init', function (e) {
+                                    editor.setContent(source_text);
+                                });
+                            }
+                        })
                     }
-                });
+                } catch (e) {}
 			}
 			return false;
 		});
