@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    window.alert('Ready!');
     try{
         tinymce.init({
             selector: 'textarea'
