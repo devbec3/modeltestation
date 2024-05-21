@@ -1,9 +1,9 @@
 $(document).ready(function(){
-
-    tinymce.init({
-        selector: 'textarea'
-    });
-
+    try{
+        tinymce.init({
+            selector: 'textarea'
+        });
+    } catch (e) {}
 
 	$("<a id='copy_source' class='copy_source' href='javascript:void(0);'>Copy from original text</a>");
 		.prependTo($(".controls:first"))
