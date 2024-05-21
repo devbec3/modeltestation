@@ -17,10 +17,8 @@ All code in in the github repository: [https://github.com/intelligenia/modeltran
 
 ### Installation
 
-This application depends on [django-cuser](https://pypi.python.org/pypi/django-cuser) and [TinyMCE](https://pypi.python.org/pypi/django-tinymce),
+This application depends on [TinyMCE](https://pypi.python.org/pypi/django-tinymce),
 so you will need to install it and put it in the list of INSTALLED_APPS before modeltranslation.
-
-You are encouraged to use pip to install django-cuser.
 
 The easiest way to install modeltranslation is by installing it from [pipy](https://pypi.python.org/pypi/modeltranslation):
 
@@ -32,7 +30,6 @@ Once you've done this, you can install modeltranslation in settings.py:
 
 INSTALLED_APPS = (
   "tinymce",
-  "cuser",
   "modeltranslation"
 )
 

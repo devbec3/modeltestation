@@ -17,16 +17,14 @@ Todo el código está en el siguiente repositori de github: [https://github.com/
 
 ### Instalación.
 
-Esta aplicación depende de [django-cuser](https://pypi.python.org/pypi/django-cuser), y de [TinyMCE](https://pypi.python.org/pypi/django-tinymce)
+Esta aplicación depende de [TinyMCE](https://pypi.python.org/pypi/django-tinymce)
 por lo que deberás instalarlo antes y ponerlo encima en el listado de aplicaciones instaladas.
-
-Puedes usar pip para instalar django-cuser.
 
 Ahora sí, para instalar la aplicación modeltranslation en settings.py debes
 incluirla en el listado de aplicaciones instaladas.
 
 INSTALLED_APPS = (
-  "cuser",
+  "tinymce",
   "modeltranslation"
 )
 
