@@ -5,15 +5,8 @@ $(document).ready(function(){
 		    tinymce.init({
                 selector: 'textarea';
             });
-			var source_text = $.trim($("#source_text").html());
-				$("#id_translation").html(source_text);
-			}
-			// If there is a TinyMCE editor, use its API
-			else{
-				tinymce.activeEditor.setContent(source_text, {format: 'raw'});
-				console.debug(tinymce.activeEditor.getContent());
-				tinymce.activeEditor.getContent({ format: 'text' });
-			}
+			tinymce.activeEditor.setContent(source_text, {format: 'raw'});
+
 			return false;
 		});
 
